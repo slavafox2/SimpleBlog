@@ -1,4 +1,4 @@
-﻿
+﻿@using System.Web.Optimization
 @{
     Layout = null;
 }
@@ -9,6 +9,8 @@
 <head>
     <meta name="viewport" content="width=device-width" />
     <title>@ViewBag.Title - Simple Blog</title>
+
+    @Styles.Render("~/styles")
 </head>
 <body>
     <header>
@@ -21,7 +23,7 @@
             <a href="@Url.RouteUrl("logout")">LogOut</a>
             if (User.IsInRole("admin"))
             {
-                <a href="@Url.Action("index", "Posts", new { area = "admin" })">---now View posts in admin </a>
+                <a href="@Url.Action("index", "Posts", new { area = "admin" })"> --- now View posts in admin </a>
             }
         }
         else
@@ -31,8 +33,12 @@
         
     </header>
 
+    
     @RenderBody()
 
     <footer>&copy; @DateTime.UtcNow.Year - Me </footer>
+
+    @Scripts.Render("~/scripts")
+    @RenderSection("Scripts", false)    
 </body>
 </html>
