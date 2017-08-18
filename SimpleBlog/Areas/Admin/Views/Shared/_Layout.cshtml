@@ -16,19 +16,20 @@
 <head>
     <title>Simple Blog Admin</title>
     @*<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">*@
+   @* <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css" rel="stylesheet">*@
     @Styles.Render("~/admin/styles")
 </head>
 <body>
     <div class="container">
-        <ul class="nav">
+        <ul class="nav nav-pills">
             <li class="@SelecteTabClas("posts")">
-                @Html.ActionLink("Posts", "Index", "Posts", new { area = "admin" }, new {  @class = "list-group-item" })
+                @Html.ActionLink("Posts", "Index", "Posts", new { area = "admin" }, new { })
             </li>
             <li class="@(ViewBag.SelectedTab == "users" ? "active" : "")">
-                @Html.ActionLink("Users", "Index", "Users", new { area = "admin" }, new { @class = "list-group-item" })
+                @Html.ActionLink("Users", "Index", "Users", new { area = "admin" }, new { })
             </li>
-            <li>
-                @Html.RouteLink("Back to Website", "Home", "", new { @class = "list-group-item" })
+            <li class="pull-right">
+                @Html.RouteLink("Back to Website", "Home")
             </li>
         </ul>
 
@@ -36,8 +37,7 @@
     </div>
 
 
-
-    <h1>THis is the admin !!!</h1>
+    @*<h1>THis is the admin !!!</h1>*@
   
     @Scripts.Render("~/admin/scripts")
 

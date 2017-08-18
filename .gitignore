@@ -6,6 +6,7 @@ obj
 
 [Db]ebug/
 [Rr]elease/
+SimpleBlog/Content/Styles1/
 *.obj
 *.pdb
 
@@ -13,3 +14,6 @@ _ReSharper*
 
 Thumbs.db
 Desktop.ini
+
+
+
