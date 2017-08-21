@@ -4,7 +4,8 @@
 
 @using (Html.BeginForm())
 {
-    @Html.ValidationSummary();
+    @Html.AntiForgeryToken()
+    @Html.ValidationSummary()
     <div class="form-group">
         @Html.LabelFor(f => f.Username)
         @Html.TextBoxFor(f => f.Username, new { @class = "form-control"})
@@ -14,6 +15,6 @@
         @Html.TextBoxFor(f => f.Email, new { @class = "form-control", type = "email"})
     </div>
 
-    <input type="submit" value="Update User" class="abtn btn-primary" />
+    <input type="submit" value="Update User" class="btn btn-primary" />
     <a href="@Url.Action("index")"> or cancel</a>
 }
