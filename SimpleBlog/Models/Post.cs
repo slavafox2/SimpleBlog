@@ -49,14 +49,14 @@ namespace SimpleBlog.Models
                   x.NotNullable(true);
               });
 
-            Property(x => x.UpdatedAt, x => x.Column("updated_at");
-            Property(x => x.DeletedAt, x => x.Column("deleted_at");
+            Property(x => x.UpdatedAt, x => x.Column("updated_at"));
+            Property(x => x.DeletedAt, x => x.Column("deleted_at"));
 
             Bag(x => x.Tags, x =>
             {
                 x.Key(y => y.Column("post_id"));
                 x.Table("post_tags");
-            }, x => x.ManyToMany(y => y.Column("tag_id"));
+            }, x => x.ManyToMany(y => y.Column("tag_id")));
         }
     }
 }
