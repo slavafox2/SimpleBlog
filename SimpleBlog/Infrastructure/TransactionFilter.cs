@@ -20,9 +20,7 @@ namespace SimpleBlog.Infrastructure
 
         public void OnActionExecuting(ActionExecutingContext filterContext)
         {
-            Database.Session.BeginTransaction();
-
-          
+            Database.Session.BeginTransaction();          
         }
     }
 }
