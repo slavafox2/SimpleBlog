@@ -34,10 +34,12 @@ namespace SimpleBlog
 
             bundles.Add(new StyleBundle("~/scripts")
                 .Include("~/scripts/popper.min.js")
+                .Include("~/scripts/jquery.timeago.js")
                 .Include("~/scripts/jquery-3.1.1.js")
                 .Include("~/scripts/jquery.validate.js")
                 .Include("~/scripts/jquery.validate.unobtrusive.js")
                 .Include("~/scripts/bootstrap.js")
+                .Include("~/scripts/frontend.js")
                 );
         }
     }
