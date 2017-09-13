@@ -14,7 +14,10 @@ namespace SimpleBlog
         {
             var namespaces = new[] { typeof(PostsController).Namespace };
 
+
             routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
+
+            
 
             routes.MapRoute("TagForRealThisTime", "tag/{idAndSlug}", new { controller = "Posts", action = "Tag" } , namespaces);
             routes.MapRoute("Tag", "tag/{id}-{slug}", new { controller = "Posts", action = "Tag" }, namespaces);
@@ -27,6 +30,9 @@ namespace SimpleBlog
             routes.MapRoute("Home", "", new { controller = "Posts", action = "Index" }, namespaces);
 
             routes.MapRoute("Sidebar", "", new { controller = "Layout", action = "Sidebar" }, namespaces);
+
+            routes.MapRoute("LogPath", "", new { controller = "Layout", action = "LogPath" }, namespaces);
+
         }
     }
 }

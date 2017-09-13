@@ -1,0 +1,14 @@
+﻿@model SimpleBlog.ViewModels.LayoutSidebar
+
+@{
+    Layout = null;
+}
+
+@if (Model.IsLoggedIn && Model.IsAdmin)
+{
+    <a href="@Url.RouteUrl("LogOut")">Log OUT.</a>
+}
+else
+{
+    <a href="@Url.RouteUrl("LogIn")">Log IN.</a>
+}

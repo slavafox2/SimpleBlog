@@ -18,8 +18,13 @@
             <h1 class="page-header">
                 <a href="@Url.RouteUrl("Home")">Awasome Stuff!!!</a>
                 <small> a simple blog powered by Asp.net MVC</small>
-            </h1>
+            </h1>            
+            <div class="pull-right">
+                @Html.Action("LogPath", "Layout")
+            </div>
         </header>
+
+
     </div>
     
     <div class="container">
