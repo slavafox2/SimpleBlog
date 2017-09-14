@@ -1,4 +1,10 @@
-# SimpleBlog
-project was created on the ASP.NET
+# **SIMPLEBLOG**  description with screens.
 
-all info about this project in the "description.odt" file
+github: https://github.com/slavafox2/SimpleBlog.git
+
+**stack of technologies**:  
+	back-end: 	NHibernate, asp.net, mySQL workbench, SourceTree (for work with git)
+	front-end: bootstrap
+
+about: 
+this is a simple site-blog showing how could display data in the form of headers and descriptions with pagination, and a little statistics on the right of them
