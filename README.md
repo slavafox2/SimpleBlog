@@ -8,11 +8,11 @@ stack of technologies:
 * front-en: bootstrap
 
 about: 
-_this is a simple site-blog showing how could display data in the form of headers and descriptions with pagination, and a little statistics on the right of them_
+___this is a simple site-blog showing how could display data in the form of headers and descriptions with pagination, and a little statistics on the right of them___
 
 ![1](/imagesForReadMe//1.png)
 
-_the simple site have authorization with admin roles ( username: nelson, password: nelson)_
+___the simple site have authorization with admin roles ( username: nelson, password: nelson)___
 
 ![2](/imagesForReadMe//2.png)
 
