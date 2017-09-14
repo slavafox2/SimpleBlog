@@ -14,7 +14,7 @@ about:
 ---
 ---
 
->__the simple site have authorization with admin roles ( username: nelson, password: nelson)__
+>__the simple site have authorization with admin roles__
 
 ![2](/imagesForReadMe//2.png)
 ---
